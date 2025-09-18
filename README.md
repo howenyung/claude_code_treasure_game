@@ -69,49 +69,12 @@ revert back to previous git commit
 
 > Ctrl + T: See the To-Do List 
 
-### custom command - check_typo 
-"Slash commands in Claude Code are custom prompts stored as Markdown files that you can trigger with a simple /command-name syntax. Think of them as reusable prompt templates that encapsulate specific workflows or instructions."
+### custom command - Vercel deployment
+- create folder: .claude/commands
+- create file: deploy_vercel.md
+- after creation, re-open a new claude code session
 
-create folder: .claude/commands
-create file: check_typo.md
-
-> I'm creating a new check_typo command @.claude/commands/check_typo.md . help me fill in information for checking Engligh grammar, typo, acronyms  
-
-re-open a new claude code session
-
-modify the /App.tsx with some typos, probably modify the comments  
-
-> /check_typo @src/App.tsx
-
-> "fix those typos for me"
-
-### custom command - deploy to Github Pages 
-sign in to Github 
-create a new public project "claude_code_treasure_game"
-
-brew install gh
-gh auth login
-
-===
-echo "# claude_code_treasure_game_001" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/uopspop/claude_code_treasure_game_001.git
-git push -u origin main
-===
-
-create folder: .claude/commands
-create file: deploy_to_github_page.md
-
-> I'm creating a new check_typo command @.claude/commands/deploy_to_github_page.md . help me finish it to deploy my project to Github Pages. Include an Argument to specify which branch to use for Github Page deployment. 
-
-re-open claude code 
-
-/deploy_to_github_page gh_page_demo_002
-
-Go to Github > Go to Repo > Settings > Page > Select branch: "gh_page_demo_002" 
-
-ex. https://[account].github.io/claude_code_treasure_game/
-
+### custom command - Github Page deployment
+- create folder: .claude/commands
+- create file: deploy_github_page.md 
+- after creation, re-open a new claude code session
