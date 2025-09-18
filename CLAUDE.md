@@ -43,7 +43,7 @@ This is a **Full-Stack React + TypeScript + Vite + Express + SQLite** treasure h
 The game implements a treasure hunting experience with three modes:
 
 **Game Flow**
-- Players click treasure chests to reveal either treasure (+$100) or skeleton (-$50)
+- Players click treasure chests to reveal either treasure (+$150) or skeleton (-$50)
 - Auto-initialization: Game starts automatically on component mount
 - End Conditions: Game ends when treasure is found OR all 3 boxes are opened
 - Custom key cursor appears when hovering over closed treasure boxes
